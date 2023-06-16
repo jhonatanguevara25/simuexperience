@@ -1,0 +1,1008 @@
+{
+  "id" : "bundle--b8bebd21-2c71-472f-b8f4-973b663d67c0",
+  "objects" : [
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "id" : "identity--20feee85-f6f8-427c-9dc1-7fde08310491",
+      "identity_class" : "events",
+      "name" : "Mixed Data Sources",
+      "type" : "identity"
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--20feee85-f6f8-427c-9dc1-7fde08310491",
+      "first_observed" : "2023-06-13T10:31:10.462692Z",
+      "id" : "observed-data--8db68937-8b31-45a6-ba3d-37596d8ffb3a",
+      "last_observed" : "2023-06-13T10:31:10.462692Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "type" : "user-account",
+          "user_id" : "MARCI"
+        },
+        "1" : {
+          "type" : "ipv4-addr",
+          "value" : "9.147.31.113"
+        },
+        "2" : {
+          "dst_port" : 3306,
+          "dst_ref" : "1",
+          "src_port" : 54880,
+          "src_ref" : "3",
+          "type" : "network-traffic"
+        },
+        "3" : {
+          "type" : "ipv4-addr",
+          "value" : "9.148.29.181"
+        }
+      },
+      "type" : "observed-data",
+      "x_com_guardium" : {
+        "anomaly_score" : 82,
+        "database_name" : "CCOE_DEMO",
+        "db_user" : "MARCI",
+        "error_outlier" : "false",
+        "high_volume_outlier" : "true",
+        "new_outlier" : "false",
+        "service_name" : "9.147.31.113:5.6.27",
+        "source_program" : "MYSQL CLIENT",
+        "temp_outlier" : "false"
+      }
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--1294b0f7-ca21-41ad-88fd-8bd266f6b04a",
+      "first_observed" : "2023-06-13T10:31:10.462692Z",
+      "id" : "observed-data--4ca7c131-cd8f-4227-894d-25901a5ea2a2",
+      "last_observed" : "2023-06-13T10:31:10.462692Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "resolves_to_refs" : [
+            "2"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "9.148.5.180"
+        },
+        "1" : {
+          "dst_port" : 0,
+          "dst_ref" : "3",
+          "protocols" : [
+            "tcp"
+          ],
+          "src_port" : 0,
+          "src_ref" : "0",
+          "type" : "network-traffic"
+        },
+        "2" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "3" : {
+          "resolves_to_refs" : [
+            "4"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "176.231.189.97"
+        },
+        "4" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "5" : {
+          "type" : "user-account",
+          "user_id" : "998"
+        },
+        "6" : {
+          "payload_bin" : "PDE0Mj5BcHIgMjMgMDc6NTE6MzQgZGVtb0FwcCB7InNvdXJjZWlwIjogIjkuMTQ4LjUuMTgwIiwg\nImRlc3RpbmF0aW9uaXAiOiAiMTc2LjIzMS4xODkuOTciLCAic291cmNlcG9ydCI6IDQ0OTQ0LCAi\nZGVzdGluYXRpb25wb3J0IjogMzMzMywgInN0YXJ0dGltZSI6IDE1ODc2MTczMTIwMDAsICJlbmR0\naW1lIjogMTU4NzYxNzM5MDAwMCwgInByb3RvY29saWQiOiA2LCAiU3JjTmV0d29yayI6ICJIYWlm\nYV9TZXJ2ZXJfU2VnbWVudHMiLCAiRGVzTmV0d29yayI6ICJvdGhlciIsICJzb3VyY2VmbGFncyI6\nIDIsICJkZXN0aW5hdGlvbmZsYWdzIjogMTgsICJzb3VyY2VfYnl0ZXMiOiA3NC4wLCAiZGVzdGlu\nYXRpb25fYnl0ZXMiOiA3NC4wLCAic291cmNlX3BhY2tldHMiOiAxLjAsICJkZXN0aW5hdGlvbl9w\nYWNrZXRzIjogMS4wLCAicmF0aW8iOiAxLjAsICJkaXJlY3Rpb24iOiAiTDJSIiwgInBvcnQiOiAz\nMzMzLCAicHJvdG9jb2wiOiAiVENQIiwgImFwcCI6IDAsICJzY29yZSI6IDk5OCwgImV2ZW50SWQi\nOiAiYWJub3JtYWwgTDJSIGNvbW11bmljYXRpb24gLSBoaWdoIFVMIiwgInVzZXJOYW1lIjogOTk4\nfQA=",
+          "type" : "artifact"
+        }
+      },
+      "type" : "observed-data",
+      "x_com_ibm_ariel" : {
+        "category_id" : "14016",
+        "category_name" : "Suspicious Flow",
+        "direction" : "R2L",
+        "geographic" : "Mexico",
+        "high_level_category_id" : "14000",
+        "high_level_category_name" : "Flow",
+        "identity_ip" : "0.0.0.0",
+        "log_source_id" : "663",
+        "log_source_name" : "web_server_Agave",
+        "log_source_type_name" : "Device type 663",
+        "magnitude" : 3,
+        "qid" : "11750804",
+        "qid_name" : "Suspicious Flow",
+        "relevance" : "1",
+        "severity" : "5"
+      }
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--1294b0f7-ca21-41ad-88fd-8bd266f6b04a",
+      "first_observed" : "2023-06-13T10:31:10.462692Z",
+      "id" : "observed-data--4ca7c131-cd8f-4227-894d-25901a5ea2a2",
+      "last_observed" : "2023-06-13T10:31:10.462692Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "resolves_to_refs" : [
+            "2"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "124.240.198.66"
+        },
+        "1" : {
+          "dst_port" : 80,
+          "dst_ref" : "3",
+          "protocols" : [
+            "tcp"
+          ],
+          "src_port" : 4545,
+          "src_ref" : "0",
+          "type" : "network-traffic"
+        },
+        "2" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "3" : {
+          "resolves_to_refs" : [
+            "4"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "172.16.10.10"
+        },
+        "4" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "5" : {
+          "type" : "user-account",
+          "user_id" : "usr-998"
+        },
+        "6" : {
+          "payload_bin" : "PDE0Mj5BcHIgMjMgMDc6NTE6MzQgZGVtb0FwcCB7InNvdXJjZWlwIjogIjkuMTQ4LjUuMTgwIiwg\nImRlc3RpbmF0aW9uaXAiOiAiMTc2LjIzMS4xODkuOTciLCAic291cmNlcG9ydCI6IDQ0OTQ0LCAi\nZGVzdGluYXRpb25wb3J0IjogMzMzMywgInN0YXJ0dGltZSI6IDE1ODc2MTczMTIwMDAsICJlbmR0\naW1lIjogMTU4NzYxNzM5MDAwMCwgInByb3RvY29saWQiOiA2LCAiU3JjTmV0d29yayI6ICJIYWlm\nYV9TZXJ2ZXJfU2VnbWVudHMiLCAiRGVzTmV0d29yayI6ICJvdGhlciIsICJzb3VyY2VmbGFncyI6\nIDIsICJkZXN0aW5hdGlvbmZsYWdzIjogMTgsICJzb3VyY2VfYnl0ZXMiOiA3NC4wLCAiZGVzdGlu\nYXRpb25fYnl0ZXMiOiA3NC4wLCAic291cmNlX3BhY2tldHMiOiAxLjAsICJkZXN0aW5hdGlvbl9w\nYWNrZXRzIjogMS4wLCAicmF0aW8iOiAxLjAsICJkaXJlY3Rpb24iOiAiTDJSIiwgInBvcnQiOiAz\nMzMzLCAicHJvdG9jb2wiOiAiVENQIiwgImFwcCI6IDAsICJzY29yZSI6IDk5OCwgImV2ZW50SWQi\nOiAiYWJub3JtYWwgTDJSIGNvbW11bmljYXRpb24gLSBoaWdoIFVMIiwgInVzZXJOYW1lIjogOTk4\nfQA=",
+          "type" : "artifact"
+        }
+      },
+      "type" : "observed-data",
+      "x_com_ibm_ariel" : {
+        "category_id" : "14016",
+        "category_name" : "Suspicious Flow",
+        "direction" : "R2L",
+        "geographic" : "Mexico",
+        "high_level_category_id" : "14000",
+        "high_level_category_name" : "Flow",
+        "identity_ip" : "0.0.0.0",
+        "log_source_id" : "663",
+        "log_source_name" : "web_server_Agave",
+        "log_source_type_name" : "Device type 663",
+        "magnitude" : 3,
+        "qid" : "11750804",
+        "qid_name" : "Suspicious Flow",
+        "relevance" : "1",
+        "severity" : "5"
+      }
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--1294b0f7-ca21-41ad-88fd-8bd266f6b04a",
+      "first_observed" : "2023-06-13T10:31:10.462692Z",
+      "id" : "observed-data--c114158a-04b5-4e63-8765-bea59ed32e27",
+      "last_observed" : "2023-06-13T10:31:10.462692Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "resolves_to_refs" : [
+            "2"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "124.240.198.66"
+        },
+        "1" : {
+          "dst_port" : 80,
+          "dst_ref" : "3",
+          "protocols" : [
+            "tcp"
+          ],
+          "src_port" : 54596,
+          "src_ref" : "0",
+          "type" : "network-traffic"
+        },
+        "2" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "3" : {
+          "resolves_to_refs" : [
+            "4"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "172.16.10.10"
+        },
+        "4" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "5" : {
+          "payload_bin" : "QXByIDIzIDA2OjU0OjAzIGlibS1kbnMtYW5hbHl6ZXIucXJhcHAubG9jYWwgaWJtLWRucy1hbmFs\neXplcjogZGV2aWNlPSdJQk0gUVJhZGFyIEROUyBBbmFseXplcicgZXZlbnRJRD0nZGdhX2RvbWFp\nbl9kZXRlY3RlZCcgY2xpZW50SVA9JzkuMTQ4LjUuMTgwJyBjbGllbnRQb3J0PSc0OTYxMScgc2Vy\ndmVySVA9JzE3Mi4xNy4wLjcnIHNlcnZlclBvcnQ9JzAnIGRvbWFpbk5hbWU9J2J0amZrZzFzZml1\nYnkxcjk2dHV5MXl6MGhlLm5ldCcgc2NvcmU9JzEnIGV2ZW50Q2F0ZWdvcnk9J2libV9kYV9hbmFs\neXRpY3MnCg==",
+          "type" : "artifact"
+        },
+        "6" : {
+          "type" : "url",
+          "value" : "btjfkg1sfiuby1r96tuy1yz0he.net"
+        }
+      },
+      "type" : "observed-data",
+      "x_com_ibm_ariel" : {
+        "category_id" : "13003",
+        "category_name" : "Potential DNS Exploit",
+        "direction" : "R2L",
+        "geographic" : "Mexico",
+        "high_level_category_id" : "13000",
+        "high_level_category_name" : "Potential Exploit",
+        "identity_ip" : "0.0.0.0",
+        "log_source_id" : "762",
+        "log_source_name" : "IBM DNS Analyzer",
+        "log_source_type_name" : "Device type 762",
+        "magnitude" : 6,
+        "qid" : "1004750002",
+        "qid_name" : "DGA Domain Detected",
+        "relevance" : "3",
+        "severity" : "7"
+      }
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--1294b0f7-ca21-41ad-88fd-8bd266f6b04a",
+      "first_observed" : "2023-06-13T10:31:10.462692Z",
+      "id" : "observed-data--3895f228-27a4-40bb-9b46-1451222e4d20",
+      "last_observed" : "2023-06-13T10:31:10.462692Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "resolves_to_refs" : [
+            "2"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "124.240.198.66"
+        },
+        "1" : {
+          "dst_port" : 80,
+          "dst_ref" : "3",
+          "protocols" : [
+            "reserved"
+          ],
+          "src_port" : 555,
+          "src_ref" : "0",
+          "type" : "network-traffic"
+        },
+        "2" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "3" : {
+          "resolves_to_refs" : [
+            "4"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "172.16.10.10"
+        },
+        "4" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "5" : {
+          "type" : "user-account",
+          "user_id" : "AVISHAYm.com"
+        },
+        "6" : {
+          "payload_bin" : "PDE1PkFwciAyMyAxMDoxNDowOSBjcDRzLWNsdXN0ZXIgZmx1ZW50ZDogeyJraW5kIjoiRXZlbnQi\nLCJhcGlWZXJzaW9uIjoiYXVkaXQuazhzLmlvL3YxIiwibGV2ZWwiOiJNZXRhZGF0YSIsImF1ZGl0\nSUQiOiJlYTBiZjNlYS1kMzI2LTQzNGUtODY4Zi1jMzVjOTIzYjE3OWIiLCJzdGFnZSI6IlJlc3Bv\nbnNlQ29tcGxldGUiLCJyZXF1ZXN0VVJJIjoiL2FwaS92MS9uYW1lc3BhY2VzL2Njb2UvcG9kcy9n\ndWFyZGl1bS1zaW11bGF0b3ItNzc1NTk1ZDc1NC16NnRicy9leGVjP2NvbW1hbmQ9dGFyJmNvbW1h\nbmQ9Y2YmY29tbWFuZD0tJmNvbW1hbmQ9JTJGdG1wJTJGZW5jLmVuYyZjb250YWluZXI9Z3VhcmRp\ndW0tc2ltdWxhdG9yJmNvbnRhaW5lcj1ndWFyZGl1bS1zaW11bGF0b3Imc3RkZXJyPXRydWUmc3Rk\nb3V0PXRydWUiLCJ2ZXJiIjoiY3JlYXRlIiwidXNlciI6eyJ1c2VybmFtZSI6IkFWSVNIQVlCQGls\nLmlibS5jb20iLCJ1aWQiOiJhYzVhNTBmMC03MzZiLTExZWEtYjhmYi0wYTU4MGE4MTAwMjciLCJn\ncm91cHMiOlsic3lzdGVtOmF1dGhlbnRpY2F0ZWQ6b2F1dGgiLCJzeXN0ZW06YXV0aGVudGljYXRl\nZCJdLCJleHRyYSI6eyJzY29wZXMuYXV0aG9yaXphdGlvbi5vcGVuc2hpZnQuaW8iOlsidXNlcjpm\ndWxsIl19fSwic291cmNlSVBzIjpbIjkuMTQ4LjUuMTgwIl0sInVzZXJBZ2VudCI6Im9jL3YxLjEx\nLjArZDRjYWNjMCAobGludXgvYW1kNjQpIGt1YmVybmV0ZXMvZDRjYWNjMCIsIm9iamVjdFJlZiI6\neyJyZXNvdXJjZSI6InBvZHMiLCJuYW1lc3BhY2UiOiJjY29lIiwibmFtZSI6Imd1YXJkaXVtLXNp\nbXVsYXRvci03NzU1OTVkNzU0LXo2dGJzIiwiYXBpVmVyc2lvbiI6InYxIiwic3VicmVzb3VyY2Ui\nOiJleGVjIn0sInJlc3BvbnNlU3RhdHVzIjp7Im1ldGFkYXRhIjp7fSwiY29kZSI6MTAxfSwicmVx\ndWVzdFJlY2VpdmVkVGltZXN0YW1wIjoiMjAyMC0wNC0yM1QxMDoxNDowNC42MDI5MDZaIiwic3Rh\nZ2VUaW1lc3RhbXAiOiIyMDIwLTA0LTIzVDEwOjE0OjA1LjkwMzU3M1oiLCJhbm5vdGF0aW9ucyI6\neyJhdXRob3JpemF0aW9uLms4cy5pby9kZWNpc2lvbiI6ImFsbG93IiwiYXV0aG9yaXphdGlvbi5r\nOHMuaW8vcmVhc29uIjoiUkJBQzogYWxsb3dlZCBieSBDbHVzdGVyUm9sZUJpbmRpbmcgXCJ3My1h\nZG1pbnNcIiBvZiBDbHVzdGVyUm9sZSBcImNsdXN0ZXItYWRtaW5cIiB0byBVc2VyIFwiQVZJU0hB\nWUJAaWwuaWJtLmNvbVwiIn19Cg==",
+          "type" : "artifact"
+        }
+      },
+      "type" : "observed-data",
+      "x_com_ibm_ariel" : {
+        "category_id" : "19009",
+        "category_name" : "Procedure/Trigger Execution",
+        "direction" : "R2L",
+        "geographic" : "Mexico",
+        "high_level_category_id" : "19000",
+        "high_level_category_name" : "Audit",
+        "identity_ip" : "0.0.0.0",
+        "log_source_id" : "1112",
+        "log_source_name" : "k8s-auditing",
+        "log_source_type_name" : "Device type 1112",
+        "magnitude" : 2,
+        "qid" : "113500870",
+        "qid_name" : "Execute a command in a Pod",
+        "relevance" : "1",
+        "severity" : "1"
+      }
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--1294b0f7-ca21-41ad-88fd-8bd266f6b04a",
+      "first_observed" : "2023-06-13T10:31:10.462692Z",
+      "id" : "observed-data--863f8110-4c0b-4cde-8e40-8c2a4bc65f29",
+      "last_observed" : "2023-06-13T10:31:10.462692Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 5,
+      "objects" : {
+        "0" : {
+          "resolves_to_refs" : [
+            "2"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "124.240.198.66"
+        },
+        "1" : {
+          "dst_port" : 22,
+          "dst_ref" : "3",
+          "protocols" : [
+            "reserved"
+          ],
+          "src_port" : 5565,
+          "src_ref" : "0",
+          "type" : "network-traffic"
+        },
+        "2" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "3" : {
+          "resolves_to_refs" : [
+            "4"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "172.16.10.20"
+        },
+        "4" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "5" : {
+          "type" : "user-account",
+          "user_id" : "system:serviceaccount:openshift-cloud-credential-operator:default"
+        },
+        "6" : {
+          "payload_bin" : "PDE1PkFwciAyMyAxMDoxNTo1OSBjcDRzLWNsdXN0ZXIgZmx1ZW50ZDogeyJraW5kIjoiRXZlbnQi\nLCJhcGlWZXJzaW9uIjoiYXVkaXQuazhzLmlvL3YxIiwibGV2ZWwiOiJNZXRhZGF0YSIsImF1ZGl0\nSUQiOiI1YzQzOTY4Yy00N2VhLTQ3ODEtOTU0OC1iNzgyNDg5ZWIzN2YiLCJzdGFnZSI6IlJlc3Bv\nbnNlQ29tcGxldGUiLCJyZXF1ZXN0VVJJIjoiL2FwaS92MS9uYW1lc3BhY2VzL29wZW5zaGlmdC1j\nbG91ZC1jcmVkZW50aWFsLW9wZXJhdG9yL2NvbmZpZ21hcHMvY2xvdWQtY3JlZGVudGlhbC1vcGVy\nYXRvci1sZWFkZXIiLCJ2ZXJiIjoiZ2V0IiwidXNlciI6eyJ1c2VybmFtZSI6InN5c3RlbTpzZXJ2\naWNlYWNjb3VudDpvcGVuc2hpZnQtY2xvdWQtY3JlZGVudGlhbC1vcGVyYXRvcjpkZWZhdWx0Iiwi\ndWlkIjoiNTI0YzBiOTYtNzM0Ni0xMWVhLTk5YTUtMDA1MDU2YjE4ODJiIiwiZ3JvdXBzIjpbInN5\nc3RlbTpzZXJ2aWNlYWNjb3VudHMiLCJzeXN0ZW06c2VydmljZWFjY291bnRzOm9wZW5zaGlmdC1j\nbG91ZC1jcmVkZW50aWFsLW9wZXJhdG9yIiwic3lzdGVtOmF1dGhlbnRpY2F0ZWQiXX0sInNvdXJj\nZUlQcyI6WyI5LjE0OC4yOS4xNjQiXSwidXNlckFnZW50IjoibWFuYWdlci92MC4wLjAgKGxpbnV4\nL2FtZDY0KSBrdWJlcm5ldGVzLyRGb3JtYXQiLCJvYmplY3RSZWYiOnsicmVzb3VyY2UiOiJjb25m\naWdtYXBzIiwibmFtZXNwYWNlIjoib3BlbnNoaWZ0LWNsb3VkLWNyZWRlbnRpYWwtb3BlcmF0b3Ii\nLCJuYW1lIjoiY2xvdWQtY3JlZGVudGlhbC1vcGVyYXRvci1sZWFkZXIiLCJhcGlWZXJzaW9uIjoi\ndjEifSwicmVzcG9uc2VTdGF0dXMiOnsibWV0YWRhdGEiOnt9LCJjb2RlIjoyMDB9LCJyZXF1ZXN0\nUmVjZWl2ZWRUaW1lc3RhbXAiOiIyMDIwLTA0LTIzVDEwOjE1OjU3LjcxODMxNVoiLCJzdGFnZVRp\nbWVzdGFtcCI6IjIwMjAtMDQtMjNUMTA6MTU6NTcuNzIwMTE1WiIsImFubm90YXRpb25zIjp7ImF1\ndGhvcml6YXRpb24uazhzLmlvL2RlY2lzaW9uIjoiYWxsb3ciLCJhdXRob3JpemF0aW9uLms4cy5p\nby9yZWFzb24iOiJSQkFDOiBhbGxvd2VkIGJ5IENsdXN0ZXJSb2xlQmluZGluZyBcImNsb3VkLWNy\nZWRlbnRpYWwtb3BlcmF0b3Itcm9sZWJpbmRpbmdcIiBvZiBDbHVzdGVyUm9sZSBcImNsb3VkLWNy\nZWRlbnRpYWwtb3BlcmF0b3Itcm9sZVwiIHRvIFNlcnZpY2VBY2NvdW50IFwiZGVmYXVsdC9vcGVu\nc2hpZnQtY2xvdWQtY3JlZGVudGlhbC1vcGVyYXRvclwiIn19Cg==",
+          "type" : "artifact"
+        }
+      },
+      "type" : "observed-data",
+      "x_com_ibm_ariel" : {
+        "category_id" : "19015",
+        "category_name" : "Read Activity Succeeded      ",
+        "direction" : "R2L",
+        "geographic" : "Mexico",
+        "high_level_category_id" : "19000",
+        "high_level_category_name" : "Audit",
+        "identity_ip" : "0.0.0.0",
+        "log_source_id" : "1112",
+        "log_source_name" : "k8s-auditing",
+        "log_source_type_name" : "Device type 1112",
+        "magnitude" : 2,
+        "qid" : "113500162",
+        "qid_name" : "Read the specified ConfigMap",
+        "relevance" : "1",
+        "severity" : "1"
+      }
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--1294b0f7-ca21-41ad-88fd-8bd266f6b04a",
+      "first_observed" : "2023-06-13T10:31:10.462692Z",
+      "id" : "observed-data--ef8c8a3f-4232-4cc4-a4ce-fae3d53faf6f",
+      "last_observed" : "2023-06-13T10:31:10.462692Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 9,
+      "objects" : {
+        "0" : {
+          "resolves_to_refs" : [
+            "2"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "124.240.198.66"
+        },
+        "1" : {
+          "dst_port" : 22,
+          "dst_ref" : "3",
+          "protocols" : [
+            "reserved"
+          ],
+          "src_port" : 5565,
+          "src_ref" : "0",
+          "type" : "network-traffic"
+        },
+        "2" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "3" : {
+          "resolves_to_refs" : [
+            "4"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "172.16.10.20"
+        },
+        "4" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "5" : {
+          "type" : "user-account",
+          "user_id" : "system:serviceaccount:openshift-kube-scheduler-operator:openshift-kube-scheduler-operator"
+        },
+        "6" : {
+          "payload_bin" : "PDE1PkFwciAyMyAxMDoxNTowNCBjcDRzLWNsdXN0ZXIgZmx1ZW50ZDogeyJraW5kIjoiRXZlbnQi\nLCJhcGlWZXJzaW9uIjoiYXVkaXQuazhzLmlvL3YxIiwibGV2ZWwiOiJNZXRhZGF0YSIsImF1ZGl0\nSUQiOiJhMDA5MjgzMS01MjBmLTQ2ZWItODYxOS1lNmU2ZGQ1ZjNhMjkiLCJzdGFnZSI6IlJlc3Bv\nbnNlQ29tcGxldGUiLCJyZXF1ZXN0VVJJIjoiL2FwaS92MS9uYW1lc3BhY2VzL29wZW5zaGlmdC1r\ndWJlLXNjaGVkdWxlci9zZWNyZXRzL3NlcnZpbmctY2VydCIsInZlcmIiOiJnZXQiLCJ1c2VyIjp7\nInVzZXJuYW1lIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Om9wZW5zaGlmdC1rdWJlLXNjaGVkdWxl\nci1vcGVyYXRvcjpvcGVuc2hpZnQta3ViZS1zY2hlZHVsZXItb3BlcmF0b3IiLCJ1aWQiOiI1ODNk\nOGRiNy03MzQ2LTExZWEtOTlhNS0wMDUwNTZiMTg4MmIiLCJncm91cHMiOlsic3lzdGVtOnNlcnZp\nY2VhY2NvdW50cyIsInN5c3RlbTpzZXJ2aWNlYWNjb3VudHM6b3BlbnNoaWZ0LWt1YmUtc2NoZWR1\nbGVyLW9wZXJhdG9yIiwic3lzdGVtOmF1dGhlbnRpY2F0ZWQiXX0sInNvdXJjZUlQcyI6WyI5LjE0\nOC4yOS4xNjQiXSwidXNlckFnZW50IjoiY2x1c3Rlci1rdWJlLXNjaGVkdWxlci1vcGVyYXRvci92\nMC4wLjAgKGxpbnV4L2FtZDY0KSBrdWJlcm5ldGVzLyRGb3JtYXQiLCJvYmplY3RSZWYiOnsicmVz\nb3VyY2UiOiJzZWNyZXRzIiwibmFtZXNwYWNlIjoib3BlbnNoaWZ0LWt1YmUtc2NoZWR1bGVyIiwi\nbmFtZSI6InNlcnZpbmctY2VydCIsImFwaVZlcnNpb24iOiJ2MSJ9LCJyZXNwb25zZVN0YXR1cyI6\neyJtZXRhZGF0YSI6e30sImNvZGUiOjIwMH0sInJlcXVlc3RSZWNlaXZlZFRpbWVzdGFtcCI6IjIw\nMjAtMDQtMjNUMTA6MTU6MDMuNjcyMDU1WiIsInN0YWdlVGltZXN0YW1wIjoiMjAyMC0wNC0yM1Qx\nMDoxNTowMy42NzQ5OTFaIiwiYW5ub3RhdGlvbnMiOnsiYXV0aG9yaXphdGlvbi5rOHMuaW8vZGVj\naXNpb24iOiJhbGxvdyIsImF1dGhvcml6YXRpb24uazhzLmlvL3JlYXNvbiI6IlJCQUM6IGFsbG93\nZWQgYnkgQ2x1c3RlclJvbGVCaW5kaW5nIFwic3lzdGVtOm9wZW5zaGlmdDpvcGVyYXRvcjpjbHVz\ndGVyLWt1YmUtc2NoZWR1bGVyLW9wZXJhdG9yXCIgb2YgQ2x1c3RlclJvbGUgXCJjbHVzdGVyLWFk\nbWluXCIgdG8gU2VydmljZUFjY291bnQgXCJvcGVuc2hpZnQta3ViZS1zY2hlZHVsZXItb3BlcmF0\nb3Ivb3BlbnNoaWZ0LWt1YmUtc2NoZWR1bGVyLW9wZXJhdG9yXCIifX0K",
+          "type" : "artifact"
+        }
+      },
+      "type" : "observed-data",
+      "x_com_ibm_ariel" : {
+        "category_id" : "19015",
+        "category_name" : "Read Activity Succeeded      ",
+        "direction" : "L2L",
+        "geographic" : "Mexico",
+        "high_level_category_id" : "19000",
+        "high_level_category_name" : "Audit",
+        "identity_ip" : "0.0.0.0",
+        "log_source_id" : "1112",
+        "log_source_name" : "intng",
+        "log_source_type_name" : "Device type 152",
+        "magnitude" : 2,
+        "qid" : "113501176",
+        "qid_name" : "80 80",
+        "relevance" : "1",
+        "severity" : "1"
+      }
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--1294b0f7-ca21-41ad-88fd-8bd266f6b04a",
+      "first_observed" : "2023-06-13T10:31:10.462692Z",
+      "id" : "observed-data--592b27cb-d484-46d8-a38b-a50cea13fccd",
+      "last_observed" : "2023-06-13T10:31:10.462692Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "resolves_to_refs" : [
+            "2"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "172.16.30.10"
+        },
+        "1" : {
+          "dst_port" : 0,
+          "dst_ref" : "3",
+          "protocols" : [
+            "reserved"
+          ],
+          "src_port" : 39635,
+          "src_ref" : "0",
+          "type" : "network-traffic"
+        },
+        "2" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "3" : {
+          "resolves_to_refs" : [
+            "4"
+          ],
+          "type" : "ipv4-addr",
+          "value" : "172.16.30.7"
+        },
+        "4" : {
+          "type" : "mac-addr",
+          "value" : "00:00:00:00:00:00"
+        },
+        "5" : {
+          "payload_bin" : "QXByIDIzIDEwOjU5OjAyIGlibS1kbnMtYW5hbHl6ZXIucXJhcHAubG9jYWwgaWJtLWRucy1hbmFs\neXplcjogZGV2aWNlPSdJQk0gUVJhZGFyIEROUyBBbmFseXplcicgZXZlbnRJRD0nc3F1YXR0aW5n\nX2RvbWFpbl9kZXRlY3RlZCcgY2xpZW50SVA9JzkuMTQ4LjUuMTgwJyBjbGllbnRQb3J0PSczOTYz\nNScgc2VydmVySVA9JzE3Mi4xNy4wLjcnIHNlcnZlclBvcnQ9JzAnIGRvbWFpbk5hbWU9J2ZhY2Vi\nMDBrLmNvbScgc2NvcmU9JzEnIGV2ZW50Q2F0ZWdvcnk9J2libV9kYV9hbmFseXRpY3MnCg==",
+          "type" : "artifact"
+        },
+        "6" : {
+          "type" : "url",
+          "value" : "faceb00k.com"
+        }
+      },
+      "type" : "observed-data",
+      "x_com_ibm_ariel" : {
+        "category_id" : "13003",
+        "category_name" : "Potential DNS Exploit",
+        "direction" : "L2L",
+        "geographic" : "Mexico",
+        "high_level_category_id" : "13000",
+        "high_level_category_name" : "Potential Exploit",
+        "identity_ip" : "0.0.0.0",
+        "log_source_id" : "762",
+        "log_source_name" : "IBM DNS Analyzer",
+        "log_source_type_name" : "Device type 762",
+        "magnitude" : 6,
+        "qid" : "1004750003",
+        "qid_name" : "Squatting Domain Detected",
+        "relevance" : "3",
+        "severity" : "7"
+      }
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+      "first_observed" : "2023-06-13T10:34:39.685155Z",
+      "id" : "observed-data--f6ef1f4c-3bfb-48d2-ad3e-9ce18749e40c",
+      "last_observed" : "2023-06-13T10:34:39.685155Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "cid" : "2f1affffc4ad3b3218468277",
+          "name" : "db-simulator-775595d754-z6tbs",
+          "runtime" : "CT_CRIO",
+          "type" : "x-ecs-container"
+        },
+        "1" : {
+          "arguments" : [
+            "aux"
+          ],
+          "created" : "2023-06-13T10:34:39.685092Z",
+          "creator_user_ref" : "4",
+          "name" : "ps",
+          "parent_ref" : "2",
+          "pid" : 2397,
+          "type" : "process",
+          "x_ecs_args_count" : 1,
+          "x_ecs_container_ref" : "0",
+          "x_ecs_event_ref" : "3"
+        },
+        "2" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:34:34.348456Z",
+          "creator_user_ref" : "4",
+          "name" : "/tmp/mal_agent",
+          "pid" : 22726,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0"
+        },
+        "3" : {
+          "action" : "exec",
+          "category" : "process",
+          "duration" : 0,
+          "ecs_type" : "start",
+          "kind" : "Discovery symptom detected",
+          "sf_type" : "PE",
+          "type" : "x-ecs-event"
+        },
+        "4" : {
+          "account_login" : "1000520000",
+          "extensions" : {
+            "unix-account-ext" : {
+              "gid" : "0",
+              "groups" : [
+                "root"
+              ]
+            }
+          },
+          "type" : "user-account",
+          "user_id" : "1000520000"
+        }
+      },
+      "type" : "observed-data"
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+      "first_observed" : "2023-06-13T10:35:16.050345Z",
+      "id" : "observed-data--26073758-ef82-41db-8133-12b4423a56fd",
+      "last_observed" : "2023-06-13T10:35:16.050345Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "cid" : "2f1affffc4ad3b3218468277",
+          "name" : "db-simulator-775595d754-z6tbs",
+          "runtime" : "CT_CRIO",
+          "type" : "x-ecs-container"
+        },
+        "1" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:34:34.348456Z",
+          "creator_user_ref" : "5",
+          "name" : "mal_agent",
+          "parent_ref" : "2",
+          "pid" : 22726,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0",
+          "x_ecs_event_ref" : "4",
+          "x_sf_accessed_file_refs" : "3"
+        },
+        "2" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:34:34.348389Z",
+          "creator_user_ref" : "5",
+          "name" : "/bin/runc",
+          "pid" : 1692,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0"
+        },
+        "3" : {
+          "name" : "/etc",
+          "type" : "file",
+          "x_ecs_type" : "file",
+          "x_sf_bytes_read" : 9999999,
+          "x_sf_bytes_written" : 0
+        },
+        "4" : {
+          "action" : "open,read,close",
+          "category" : "file",
+          "duration" : 0,
+          "ecs_type" : "access",
+          "kind" : "Extensive file reads",
+          "sf_type" : "FF",
+          "type" : "x-ecs-event"
+        },
+        "5" : {
+          "account_login" : "1000520000",
+          "extensions" : {
+            "unix-account-ext" : {
+              "gid" : "0",
+              "groups" : [
+                "root"
+              ]
+            }
+          },
+          "type" : "user-account",
+          "user_id" : "1000520000"
+        }
+      },
+      "type" : "observed-data"
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+      "first_observed" : "2023-06-13T10:53:04.596543Z",
+      "id" : "observed-data--a46c15e1-0bc1-4686-98d7-efe46230e934",
+      "last_observed" : "2023-06-13T10:53:04.596543Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "cid" : "2f1affffc4ad3b3218468277",
+          "name" : "db-simulator-775595d754-z6tbs",
+          "runtime" : "CT_CRIO",
+          "type" : "x-ecs-container"
+        },
+        "1" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:52:59.454803Z",
+          "creator_user_ref" : "4",
+          "name" : "mal_agent",
+          "parent_ref" : "2",
+          "pid" : 23544,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0",
+          "x_ecs_event_ref" : "3"
+        },
+        "2" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:52:59.454729Z",
+          "creator_user_ref" : "4",
+          "name" : "/bin/runc",
+          "pid" : 3422,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0"
+        },
+        "3" : {
+          "action" : "exec",
+          "category" : "process",
+          "duration" : 0,
+          "ecs_type" : "start",
+          "kind" : "Unexpected process",
+          "sf_type" : "PE",
+          "type" : "x-ecs-event"
+        },
+        "4" : {
+          "account_login" : "1000520000",
+          "extensions" : {
+            "unix-account-ext" : {
+              "gid" : "0",
+              "groups" : [
+                "root"
+              ]
+            }
+          },
+          "type" : "user-account",
+          "user_id" : "1000520000"
+        }
+      },
+      "type" : "observed-data"
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+      "first_observed" : "2023-06-13T10:29:50.970628Z",
+      "id" : "observed-data--758905f0-0c07-404e-b74e-b340e2ecafa2",
+      "last_observed" : "2023-06-13T10:29:50.970628Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "cid" : "2f1affffc4ad3b3218468277",
+          "name" : "db-simulator-775595d754-z6tbs",
+          "runtime" : "CT_CRIO",
+          "type" : "x-ecs-container"
+        },
+        "1" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:29:00.423160Z",
+          "creator_user_ref" : "5",
+          "name" : "mal_agent",
+          "parent_ref" : "2",
+          "pid" : 23407,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0",
+          "x_ecs_event_ref" : "4",
+          "x_sf_accessed_file_refs" : "3"
+        },
+        "2" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:29:00.423089Z",
+          "creator_user_ref" : "5",
+          "name" : "/bin/runc",
+          "pid" : 1731,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0"
+        },
+        "3" : {
+          "name" : "/tmp/enc.enc",
+          "type" : "file",
+          "x_ecs_type" : "file",
+          "x_sf_bytes_read" : 0,
+          "x_sf_bytes_written" : 139810488
+        },
+        "4" : {
+          "action" : "open,write,close",
+          "category" : "file",
+          "duration" : 0,
+          "ecs_type" : "access",
+          "kind" : "Encrypted file created",
+          "sf_type" : "FF",
+          "type" : "x-ecs-event"
+        },
+        "5" : {
+          "account_login" : "1000520000",
+          "extensions" : {
+            "unix-account-ext" : {
+              "gid" : "0",
+              "groups" : [
+                "root"
+              ]
+            }
+          },
+          "type" : "user-account",
+          "user_id" : "1000520000"
+        }
+      },
+      "type" : "observed-data"
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+      "first_observed" : "2023-06-13T10:35:21.029857Z",
+      "id" : "observed-data--ac17dda5-83ac-43b2-b3ec-91734e9c8e56",
+      "last_observed" : "2023-06-13T10:35:21.029857Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "cid" : "2f1affffc4ad3b3218468277",
+          "name" : "db-simulator-775595d754-z6tbs",
+          "runtime" : "CT_CRIO",
+          "type" : "x-ecs-container"
+        },
+        "1" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:34:34.348456Z",
+          "creator_user_ref" : "5",
+          "name" : "mal_agent",
+          "parent_ref" : "2",
+          "pid" : 22726,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0",
+          "x_ecs_event_ref" : "4",
+          "x_sf_accessed_file_refs" : "3"
+        },
+        "2" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:34:34.348389Z",
+          "creator_user_ref" : "5",
+          "name" : "/bin/runc",
+          "pid" : 1692,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0"
+        },
+        "3" : {
+          "name" : "/tmp/enc.enc",
+          "type" : "file",
+          "x_ecs_type" : "file",
+          "x_sf_bytes_read" : 0,
+          "x_sf_bytes_written" : 139810488
+        },
+        "4" : {
+          "action" : "open,write,close",
+          "category" : "file",
+          "duration" : 0,
+          "ecs_type" : "access",
+          "kind" : "Encrypted file created",
+          "sf_type" : "FF",
+          "type" : "x-ecs-event"
+        },
+        "5" : {
+          "account_login" : "1000520000",
+          "extensions" : {
+            "unix-account-ext" : {
+              "gid" : "0",
+              "groups" : [
+                "root"
+              ]
+            }
+          },
+          "type" : "user-account",
+          "user_id" : "1000520000"
+        }
+      },
+      "type" : "observed-data"
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+      "first_observed" : "2023-06-13T10:34:34.348492Z",
+      "id" : "observed-data--fd32ba47-a694-4608-bbd1-cc6835111c27",
+      "last_observed" : "2023-06-13T10:34:34.348492Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "cid" : "2f1affffc4ad3b3218468277",
+          "name" : "db-simulator-775595d754-z6tbs",
+          "runtime" : "CT_CRIO",
+          "type" : "x-ecs-container"
+        },
+        "1" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:34:34.348389Z",
+          "creator_user_ref" : "5",
+          "name" : "runc",
+          "parent_ref" : "2",
+          "pid" : 1692,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0",
+          "x_ecs_event_ref" : "4",
+          "x_sf_accessed_file_refs" : "3"
+        },
+        "2" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:34:34.348479Z",
+          "creator_user_ref" : "5",
+          "pid" : -1,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0"
+        },
+        "3" : {
+          "name" : "/tmp/mal_agent",
+          "type" : "file",
+          "x_ecs_type" : "file",
+          "x_sf_bytes_read" : 0,
+          "x_sf_bytes_written" : 3532931
+        },
+        "4" : {
+          "action" : "open,write,close",
+          "category" : "file",
+          "duration" : 0,
+          "ecs_type" : "access",
+          "kind" : "Executable file created",
+          "sf_type" : "FF",
+          "type" : "x-ecs-event"
+        },
+        "5" : {
+          "account_login" : "1000520000",
+          "extensions" : {
+            "unix-account-ext" : {
+              "gid" : "0",
+              "groups" : [
+                "root"
+              ]
+            }
+          },
+          "type" : "user-account",
+          "user_id" : "1000520000"
+        }
+      },
+      "type" : "observed-data"
+    },
+    {
+      "created" : "2023-06-13T10:31:10.462692Z",
+      "created_by_ref" : "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+      "first_observed" : "2023-06-13T10:29:05.937918Z",
+      "id" : "observed-data--3917d143-3d0a-460e-88f7-3f9909dcbf33",
+      "last_observed" : "2023-06-13T10:29:05.937918Z",
+      "modified" : "2023-06-13T10:31:10.462692Z",
+      "number_observed" : 1,
+      "objects" : {
+        "0" : {
+          "cid" : "2f1affffc4ad3b3218468277",
+          "name" : "db-simulator-775595d754-z6tbs",
+          "runtime" : "CT_CRIO",
+          "type" : "x-ecs-container"
+        },
+        "1" : {
+          "arguments" : [
+            "aux"
+          ],
+          "created" : "2023-06-13T10:29:05.937844Z",
+          "creator_user_ref" : "4",
+          "name" : "ps",
+          "parent_ref" : "2",
+          "pid" : 2806,
+          "type" : "process",
+          "x_ecs_args_count" : 1,
+          "x_ecs_container_ref" : "0",
+          "x_ecs_event_ref" : "3"
+        },
+        "2" : {
+          "arguments" : [],
+          "created" : "2023-06-13T10:29:00.423160Z",
+          "creator_user_ref" : "4",
+          "name" : "/tmp/mal_agent",
+          "pid" : 23407,
+          "type" : "process",
+          "x_ecs_args_count" : 0,
+          "x_ecs_container_ref" : "0"
+        },
+        "3" : {
+          "action" : "exec",
+          "category" : "process",
+          "duration" : 0,
+          "ecs_type" : "start",
+          "kind" : "Discovery symptom detected",
+          "sf_type" : "PE",
+          "type" : "x-ecs-event"
+        },
+        "4" : {
+          "account_login" : "1000520000",
+          "extensions" : {
+            "unix-account-ext" : {
+              "gid" : "0",
+              "groups" : [
+                "root"
+              ]
+            }
+          },
+          "type" : "user-account",
+          "user_id" : "1000520000"
+        }
+      },
+      "type" : "observed-data"
+    }
+  ],
+  "spec_version" : "2.0",
+  "type" : "bundle"
+}
