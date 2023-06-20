@@ -61,7 +61,7 @@
                     "name": "Outbound Transfer of Sensitive Data (PII)",
                     "description": "Outbound flow detected containing suspect conten: entity alert",
                     "rule_names": [
-                        "GrAgave: Outbound Transfer of Sensitive Data (PII)",
+                        "GrCopisa: Outbound Transfer of Sensitive Data (PII)",
                         "BB:PortDefinition: Web Ports",
                         "Source Asset Weight is Low",
                         "Source Asset Exists",
@@ -185,7 +185,7 @@
                     "name": "Outbound Transfer of Sensitive Data (PII)",
                     "description": "Outbound flow detected containing suspect conten: entity alert",
                     "rule_names": [
-                        "GrAgave: Outbound Transfer of Sensitive Data (PII)",
+                        "GrCopisa: Outbound Transfer of Sensitive Data (PII)",
                         "BB:PortDefinition: Web Ports",
                         "Source Asset Weight is Low",
                         "Source Asset Exists",
